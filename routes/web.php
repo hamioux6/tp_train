@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use MarcinOrlowski\ResponseBuilder\ResponseBuilder as RB;
+use App\Models\Train;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +20,7 @@ Route::get('/', function () {
 });
 
 
-Route::get('/test', function () {
-    return RB::error(404);
+Route::get('/test/{error}', function ($error) {
+    //$passager = new Passager;
+    return RB::success([ 'foo' => 'bar' ]);
 });

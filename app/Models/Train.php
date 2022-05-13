@@ -8,6 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Train extends Model
 {
     use HasFactory;
+    protected int $Numero;
+    protected int $HeureDep;
+    protected int $HeureArrive;
+    protected int $DateDep;
+    protected int $DateArrive;
 }
 
 

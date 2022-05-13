@@ -5,11 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Companie extends Model
+class Passager extends Model
 {
     use HasFactory;
-
     protected string $Nom;
-    protected bool $Annule;
-
+    protected string $Prenom;
 }
